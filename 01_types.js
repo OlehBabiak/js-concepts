@@ -9,5 +9,4 @@ console.log(typeof Symbol('JS'))
 console.log(typeof function () {})
 console.log(typeof NaN)
 
-rturyi
-iuir7iiiii78i
+111111111111111111111111
