@@ -9,4 +9,4 @@ console.log(typeof Symbol('JS'))
 console.log(typeof function () {})
 console.log(typeof NaN)
 
-
+rturyi
