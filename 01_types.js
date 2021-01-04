@@ -10,3 +10,4 @@ console.log(typeof function () {})
 console.log(typeof NaN)
 
 rturyi
+iuir7iiiii78i
