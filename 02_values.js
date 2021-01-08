@@ -22,3 +22,7 @@ b.push(4)
 let c = [1, 2, 3, 4]
 console.log(a===b)  // true
 console.log(a===c)   // false
+console.log(b===c)   // false
+console.log(a)
+console.log(b)
+console.log(c)
