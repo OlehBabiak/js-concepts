@@ -44,24 +44,23 @@
 // 	})(i)
 // }
 
-function bind(context, fn) {
-	
-	return function (...args) {
-	fn.apply(context, args)
-	}
-}
-
-function logPerson() {
-	console.log(`Peson: name - ${this.name}, age - ${this.age}, job - ${this.job}`)
-}
-const person1 = {name: 'Nastja', age: 28, job: 'bank'}
-const person2 = {name: 'Oleh', age: 39, job: 'developer'}
-bind(person1, logPerson)()
-bind(person2, logPerson)()
+// function bind(context, fn) {
+// 	return function (...args) {
+// 	fn.apply(context, args)
+// 	}
+// }
+//
+// function logPerson() {
+// 	console.log(`Peson: name - ${this.name}, age - ${this.age}, job - ${this.job}`)
+// }
+// const person1 = {name: 'Nastja', age: 28, job: 'bank'}
+// const person2 = {name: 'Oleh', age: 39, job: 'developer'}
+// bind(person1, logPerson)()
+// bind(person2, logPerson)()
 //==========================
-function urlGenerator(domain) {
-	return function (url) {
-		return `https://${url}.${domain}`
+function urlGenerator(url) {
+	return function (domain) {
+		return `https://${domain}.${url}`
 	}
 }
 
@@ -69,5 +68,11 @@ let urlCom = urlGenerator('com')
 console.log(urlCom('google'))
 console.log(urlCom('netflix'))
 
-let urlComUa = urlGenerator('com.ua')
-console.log(urlComUa('lider-shyna'))
+
+function urlgenerator2(url) {
+	return function (domen) {
+		return `https://${domen}.${url}`
+	}
+}
+let urlCC = urlgenerator2('cc')
+console.log(urlCC('rezina'))
